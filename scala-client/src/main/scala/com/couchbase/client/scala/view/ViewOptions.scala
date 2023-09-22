@@ -256,7 +256,7 @@ case class ViewOptions(
       "skip"           -> skip,
       "on_error"       -> onError.map(_.encode),
       "debug"          -> debug,
-      "descending"     -> order,
+      "descending"     -> order.map(_.encoded),
       "key"            -> key,
       "startkey_docid" -> startKeyDocId,
       "endkey_docid"   -> endKeyDocId,
