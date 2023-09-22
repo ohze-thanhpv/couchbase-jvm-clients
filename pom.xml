@@ -4,7 +4,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.couchbase.client</groupId>
     <artifactId>couchbase-jvm-clients</artifactId>
-    <version>1.13.10-patch1</version>
+    <version>1.13.10</version>
     <packaging>pom</packaging>
 
     <name>Couchbase JVM Client Parent</name>
@@ -16,13 +16,13 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 
-        <osgi-feature.version>3.4.10-patch1</osgi-feature.version>
-        <java-examples.version>1.4.10-patch1</java-examples.version>
-        <java-client.version>3.4.10-patch1</java-client.version>
-        <core-io.version>2.4.10-patch1</core-io.version>
-        <core-io-deps.version>1.4.10-patch1</core-io-deps.version>
-        <scala-client.version>1.4.10-patch1</scala-client.version>
-        <kotlin-client.version>1.1.10-patch1</kotlin-client.version>
+        <osgi-feature.version>3.4.10</osgi-feature.version>
+        <java-examples.version>1.4.10</java-examples.version>
+        <java-client.version>3.4.10</java-client.version>
+        <core-io.version>2.4.10</core-io.version>
+        <core-io-deps.version>1.4.10</core-io-deps.version>
+        <scala-client.version>1.4.10-patch2</scala-client.version>
+        <kotlin-client.version>1.1.10</kotlin-client.version>
 
         <junit.version>5.9.1</junit.version>
         <assertj.version>3.23.1</assertj.version>
@@ -68,12 +68,12 @@
 
     <distributionManagement>
         <snapshotRepository>
-            <id>ossrh</id>
-            <url>https://oss.sonatype.org/content/repositories/snapshots</url>
+            <id>sdrepo</id>
+            <url>https://repo.bennuoc.com/repository/maven-snapshots</url>
         </snapshotRepository>
         <repository>
-            <id>ossrh</id>
-            <url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
+            <id>sdrepo</id>
+            <url>https://repo.bennuoc.com/repository/maven-releases</url>
         </repository>
     </distributionManagement>
 
@@ -117,17 +117,17 @@
             <dependency>
                 <groupId>com.couchbase.client</groupId>
                 <artifactId>test-utils</artifactId>
-                <version>1.4.10-patch1</version>
+                <version>1.4.10</version>
             </dependency>
             <dependency>
                 <groupId>com.couchbase.client</groupId>
                 <artifactId>tracing-opentelemetry</artifactId>
-                <version>1.2.10-patch1</version>
+                <version>1.2.10</version>
             </dependency>
             <dependency>
                 <groupId>com.couchbase.client</groupId>
                 <artifactId>metrics-opentelemetry</artifactId>
-                <version>0.4.10-patch1</version>
+                <version>0.4.10</version>
             </dependency>
             <dependency>
                 <groupId>io.projectreactor.tools</groupId>
